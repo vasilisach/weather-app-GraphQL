@@ -1,0 +1,122 @@
+.App {
+  background-image: url('./assets/images/2850815.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.App-header{
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+  width: 160px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.search-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px){
+  .search-wrapper{
+    margin-top: 150px;
+  }
+}
+.search{
+  font-size: 18px;
+}
+.search-btn{
+  background-color: white;
+  cursor: pointer;
+}
+.search, .search-btn{
+  outline: none;
+  border: none;
+}
+.loading, .search-error{
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.city-name, .current-date{
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+}
+.current-date{
+  font-size: 14px;
+  margin: 0 10px;
+  font-weight: 200;
+}
+.weather-data_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px){
+  .weather-data_wrapper{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.weather-data_main{
+  font-size: 150px;
+  color: white;
+  margin: auto;
+}
+.summary{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+  padding: 10px;
+  text-decoration: overline underline;
+}
+@media screen and (min-width: 768px){
+  .weather-data_main{
+    font-size: 200px;
+  }
+}
+.weather-data_rest{
+  background-color: rgba(255,255,255,0.3);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+@media screen and (min-width: 768px){
+  .weather-data_rest{
+    margin: 10px;
+    padding: 20px 5px;
+  }
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  color: white;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px){
+  .item{
+    padding: 10px 30px;
+  }
+}
+.item_type{
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+  font-style: italic;
+}

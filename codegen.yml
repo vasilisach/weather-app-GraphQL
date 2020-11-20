@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://graphql-weather-api.herokuapp.com/"
+documents: "./src/components/*.ts"
+generates:
+  src/types.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
